@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/COVID-19-Tamilnadu/static/css/main.22ec6237.chunk.css",
+    "main.js": "/COVID-19-Tamilnadu/static/js/main.5e63ff93.chunk.js",
+    "main.js.map": "/COVID-19-Tamilnadu/static/js/main.5e63ff93.chunk.js.map",
+    "runtime-main.js": "/COVID-19-Tamilnadu/static/js/runtime-main.7753cbc0.js",
+    "runtime-main.js.map": "/COVID-19-Tamilnadu/static/js/runtime-main.7753cbc0.js.map",
+    "static/js/2.7ab81be1.chunk.js": "/COVID-19-Tamilnadu/static/js/2.7ab81be1.chunk.js",
+    "static/js/2.7ab81be1.chunk.js.map": "/COVID-19-Tamilnadu/static/js/2.7ab81be1.chunk.js.map",
+    "index.html": "/COVID-19-Tamilnadu/index.html",
+    "precache-manifest.3a683e444a18d0cad5b098ad64e16a9a.js": "/COVID-19-Tamilnadu/precache-manifest.3a683e444a18d0cad5b098ad64e16a9a.js",
+    "service-worker.js": "/COVID-19-Tamilnadu/service-worker.js",
+    "static/css/main.22ec6237.chunk.css.map": "/COVID-19-Tamilnadu/static/css/main.22ec6237.chunk.css.map",
+    "static/js/2.7ab81be1.chunk.js.LICENSE.txt": "/COVID-19-Tamilnadu/static/js/2.7ab81be1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7753cbc0.js",
+    "static/js/2.7ab81be1.chunk.js",
+    "static/css/main.22ec6237.chunk.css",
+    "static/js/main.5e63ff93.chunk.js"
+  ]
+}
