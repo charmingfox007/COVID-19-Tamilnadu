@@ -12,7 +12,6 @@ function App() {
         <NavBar />
       </header>
       <body className = 'container'>
-        <div className = 'mapContainer'>
         <Map center={[11.127123, 78.656891]} zoom={6}>
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -37,10 +36,7 @@ function App() {
           </Popup>)}
 
         </Map>
-        </div>
-        <div className = 'tableContainer'>
 
-        </div>
       </body>
     </div>
   );
