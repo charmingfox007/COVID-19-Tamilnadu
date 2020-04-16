@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/COVID-19-Tamilnadu/static/css/main.22ec6237.chunk.css",
-    "main.js": "/COVID-19-Tamilnadu/static/js/main.5e63ff93.chunk.js",
-    "main.js.map": "/COVID-19-Tamilnadu/static/js/main.5e63ff93.chunk.js.map",
+    "main.css": "/COVID-19-Tamilnadu/static/css/main.35780111.chunk.css",
+    "main.js": "/COVID-19-Tamilnadu/static/js/main.9c3dcbe8.chunk.js",
+    "main.js.map": "/COVID-19-Tamilnadu/static/js/main.9c3dcbe8.chunk.js.map",
     "runtime-main.js": "/COVID-19-Tamilnadu/static/js/runtime-main.7753cbc0.js",
     "runtime-main.js.map": "/COVID-19-Tamilnadu/static/js/runtime-main.7753cbc0.js.map",
-    "static/js/2.7ab81be1.chunk.js": "/COVID-19-Tamilnadu/static/js/2.7ab81be1.chunk.js",
-    "static/js/2.7ab81be1.chunk.js.map": "/COVID-19-Tamilnadu/static/js/2.7ab81be1.chunk.js.map",
+    "static/css/2.ad8fe80d.chunk.css": "/COVID-19-Tamilnadu/static/css/2.ad8fe80d.chunk.css",
+    "static/js/2.04fe0b74.chunk.js": "/COVID-19-Tamilnadu/static/js/2.04fe0b74.chunk.js",
+    "static/js/2.04fe0b74.chunk.js.map": "/COVID-19-Tamilnadu/static/js/2.04fe0b74.chunk.js.map",
     "index.html": "/COVID-19-Tamilnadu/index.html",
-    "precache-manifest.3a683e444a18d0cad5b098ad64e16a9a.js": "/COVID-19-Tamilnadu/precache-manifest.3a683e444a18d0cad5b098ad64e16a9a.js",
+    "precache-manifest.db70f5d0faa6c98a70c4a6de44ee0f05.js": "/COVID-19-Tamilnadu/precache-manifest.db70f5d0faa6c98a70c4a6de44ee0f05.js",
     "service-worker.js": "/COVID-19-Tamilnadu/service-worker.js",
-    "static/css/main.22ec6237.chunk.css.map": "/COVID-19-Tamilnadu/static/css/main.22ec6237.chunk.css.map",
-    "static/js/2.7ab81be1.chunk.js.LICENSE.txt": "/COVID-19-Tamilnadu/static/js/2.7ab81be1.chunk.js.LICENSE.txt"
+    "static/css/2.ad8fe80d.chunk.css.map": "/COVID-19-Tamilnadu/static/css/2.ad8fe80d.chunk.css.map",
+    "static/css/main.35780111.chunk.css.map": "/COVID-19-Tamilnadu/static/css/main.35780111.chunk.css.map",
+    "static/js/2.04fe0b74.chunk.js.LICENSE.txt": "/COVID-19-Tamilnadu/static/js/2.04fe0b74.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7753cbc0.js",
-    "static/js/2.7ab81be1.chunk.js",
-    "static/css/main.22ec6237.chunk.css",
-    "static/js/main.5e63ff93.chunk.js"
+    "static/css/2.ad8fe80d.chunk.css",
+    "static/js/2.04fe0b74.chunk.js",
+    "static/css/main.35780111.chunk.css",
+    "static/js/main.9c3dcbe8.chunk.js"
   ]
 }
