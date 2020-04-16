@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "antd": "^4.1.0",
     "gh-pages": "^2.2.0"
   }
 }

@@ -1,43 +1,69 @@
 import React from 'react';
 import './App.css';
-import NavBar from './Components/NavBar/NavBar';
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
-import * as input from './InputData.json'
+import { Layout, Menu, Breadcrumb } from 'antd';
+import { Typography } from 'antd';
+import { MailOutlined, PhoneOutlined } from '@ant-design/icons';
+import CustomMap from './Components/MapComponent/Map'
+const { SubMenu } = Menu;
+const { Title } = Typography
+const { Header, Sider, Content } = Layout;
 
 function App() {
-  const [ActivePopup, SetPopup] = React.useState(null);
+  const [currentMap, setMap] = React.useState('Affected areas');
   return (
     <div className="App">
-      <header className="App-header">
-        <NavBar />
-      </header>
-      <body className = 'container'>
-        <Map center={[11.127123, 78.656891]} zoom={6}>
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          />
-          {input.features.map(data => (
-            <Marker key={data.properties.District_Code} position={[
-              data.geometry.coordinates[0],
-              data.geometry.coordinates[1]
-            ]} OnClick={() => SetPopup(data)} />
-          ))}
+      <Layout >
+        <Header style={{ backgroundColor: '#6A5ACD' }}>
+          <Title level={4} style={{ color: 'white', paddingTop: '16px' }} >
+            COVID-19 Tracker TamilNadu
+       </Title></Header>
+        <Layout>
+          <Sider style={{ backgroundColor: '#F0F8FF' }}>
+            <Menu defaultSelectedKeys={['affected']}
+              mode="inline">
+              <Menu.Item key="testingCenters" onClick={() => setMap("Testing Centers")}>
+                Testing Centers</Menu.Item>
+              <Menu.Item key="affected" onClick={() => setMap("Affected areas")}>Affected areas</Menu.Item>
+              <SubMenu key="sub1"
+                title={
+                  <span>
+                    <MailOutlined />
+                    <span>Emergency Contact</span>
+                  </span>}>
+                <Menu.Item>
+                  <span>
+                    <PhoneOutlined />
+                    <span>044-29510500</span>
+                  </span></Menu.Item>
+                <Menu.Item>
+                  <span>
+                    <MailOutlined />
+                    <span>ncov2019@gmail.com</span>
+                  </span></Menu.Item>
+              </SubMenu>
+            </Menu>
+          </Sider>
+          <Layout style={{ backgroundColor: '#F5F5F5' }}>
+            <Breadcrumb style={{ margin: '15px 15px 0px' }}>
+              <Breadcrumb.Item>{currentMap}</Breadcrumb.Item>
+            </Breadcrumb>
+            <Content
+              className="site-layout-background"
+              style={{
+                padding: 15,
+                margin: 0,
+                minHeight: 400,
+              }}
+            >
+              <CustomMap
+                isDefaultMap={currentMap}
+              />
+            </Content>
+          </Layout>
+        </Layout>
 
-          {ActivePopup && (<Popup position={[
-            ActivePopup.geometry.coordinates[0],
-            ActivePopup.geometry.coordinates[1]
-          ]}  onClose = {() => SetPopup(null)}>
-            <h4>{ActivePopup.properties.NAME}</h4>
-            <h4>Total Count - {ActivePopup.properties.TotalCount}</h4>
-            <h4>Active Count - {ActivePopup.properties.ActiveCount}</h4>
-            <h4>Recovered - {ActivePopup.properties.Recovered}</h4>
-            <h4>Deceased - {ActivePopup.properties.Deceased}</h4>
-          </Popup>)}
+      </Layout>
 
-        </Map>
-
-      </body>
     </div>
   );
 }

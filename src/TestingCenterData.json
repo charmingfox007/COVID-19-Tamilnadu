@@ -1,0 +1,35 @@
+{"features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "District_Code": 1,
+        "NAME": "Thiruvarur Medical College"  
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [10.7755, 79.6052]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District_Code": 2,
+        "NAME": "Theni Government Medical College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [10.0062, 77.5537]
+      }
+    },{
+        "type": "Feature",
+        "properties": {
+          "District_Code": 3,
+          "NAME": "Tirunelveli Medical College"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [8.7118, 77.7508]
+        }
+      }
+  ]
+}
